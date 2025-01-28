@@ -698,7 +698,8 @@ message Metadata {
     // Arista: b/354689142  
     // Devices that do not support gRIBIencap headers.
     bool gribi_encap_header_unsupported = 249;
-
+    // Devices that do not support config for UsedThresholdUpper and UsedThresholdUpperClear
+    bool upper_and_clear_thresholds_unsupported = 250;
     // Reserved field numbers and identifiers.
     reserved 84, 9, 28, 20, 90, 97, 55, 89, 19, 36, 35, 40, 173;
   }

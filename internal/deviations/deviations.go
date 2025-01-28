@@ -1307,3 +1307,8 @@ func QosSchedulerIngressPolicer(dut *ondatra.DUTDevice) bool {
 func GribiEncapHeaderUnsupported(dut *ondatra.DUTDevice) bool {
 	return lookupDUTDeviations(dut).GetGribiEncapHeaderUnsupported()
 }
+
+// UpperAndClearThresholdsUnsupported returns true if config for UsedThresholdUpper and UsedThresholdUpperClear is unsupported
+func UpperAndClearThresholdsUnsupported(dut *ondatra.DUTDevice) bool {
+	return lookupDUTDeviations(dut).GetUpperAndClearThresholdsUnsupported()
+}
